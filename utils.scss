@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "compass/css3/background-size";
+
+/**
+ * $em: the width of html label you want to place the background
+ * $map: the reference to the sprite
+ * $name: the name of the png picture in the sprite you want to show
+ */
+@mixin cal_background_size($em, $map, $name) {
+  @include background-size($em * sprite-width($map)/image-width(sprite-file($map, $name)) auto);
+}
+
+/*
+ * $map: reference to the sprite
+ * $name: the name of the png picture in the sprite you want to show
+ * $dimensions: should we set the original width and height to the generated css
+ * $offset-x: custom the offset-x in background-position
+ * $offset-y: custom the offset-y in background-position
+ * $use-percentages: should we use percentage in background-position
+ *
+ * return background-position: 0 10% (10px)
+ */
+@mixin icon-sprite($map, $name, $dimensions: false, $offset-x: 0, $offset-y: 0, $use-percentages: false) {
+
+  @include sprite($map, $name, $dimensions, $offset-x, $offset-y, $use-percentages);
+}
+
+
+/*
+ * $map: reference to the sprite
+ * $sprite-names: the array of the names of the png pictures
+ * $base-class: the base class to extend from
+ * $dimensions
+ * $prefix: the prefix of the generated css class
+ * return
+ *  #{$prefix}-#{$sprite-name} { xxxxxxxx }
+ *  #{$prefix}-#{$sprite-name} { bbbbbbbb }
+ */
+@mixin icon-sprites($map, $sprite-names, $base-class: false, $dimensions: false, $prefix: 'icon', $offset-x: 0, $offset-y: 0, $use-percentages: false) {
+  @include sprites($map, $sprite-names, $base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages);
+}
+
+// sprites with #{$prefix}-<sprite> class
+// the same with @include all-xxx-sprites
+@mixin render_sprites_css($map, $base-class, $dimensions: false, $prefix: 'icon', $offset-x: 0, $offset-y: 0, $use-percentages: true, $icon-repeat: no-repeat) {
+
+  $icon-sprite-base-class: $base-class !default;
+
+  .#{$prefix}-#{$icon-sprite-base-class} {
+      background: $map $icon-repeat;
+  }
+
+  $sprite-names: sprite_names($map);
+
+  @each $sprite in $sprite-names {
+    .#{$prefix}-#{$sprite} {
+
+      @extend .#{$prefix}-#{$icon-sprite-base-class};
+      @include icon-sprite($map, $sprite, $dimensions, $offset-x, $offset-y, $use-percentages);
+    }
+  }
+
+}
+
+// in new compass(v1.0.3), when you @include #{$prefix}-xxxxx-sprite
+// you will also include the #{$prefix}-xxxx classname
+// so use this new method to include the inner css to your css class
+@mixin include_single_sprites($map, $sprite, $dimensions: false, $offset-x: 0, $offset-y: 0, $use-percentages: true, $icon-repeat: no-repeat) {
+  background-image: $map;
+  background-repeat: $icon-repeat;
+  @include icon-sprite($map, $sprite, $dimensions, $offset-x, $offset-y, $use-percentages);
+}
+
