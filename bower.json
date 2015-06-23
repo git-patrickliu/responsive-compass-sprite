@@ -1,0 +1,23 @@
+{
+  "name": "responsive-compass-sprite",
+  "version": "0.0.0",
+  "homepage": "https://github.com/git-patrickliu/responsive-compass-sprite",
+  "description": "utils for responsive compass sprite",
+  "main": "utils.scss",
+  "keywords": [
+    "compass",
+    "sprite",
+    "responsive"
+  ],
+  "authors": [
+    "liupeng"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
