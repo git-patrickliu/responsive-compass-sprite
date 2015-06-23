@@ -1,6 +1,6 @@
 {
   "name": "responsive-compass-sprite",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/git-patrickliu/responsive-compass-sprite",
   "description": "utils for responsive compass sprite",
   "main": "utils.scss",
