@@ -33,14 +33,14 @@
  * $dimensions
  * $prefix: the prefix of the generated css class
  * return
- *  #{$prefix}-#{$sprite-name} { xxxxxxxx }
- *  #{$prefix}-#{$sprite-name} { bbbbbbbb }
+ *  $prefix}-$sprite-name { xxxxxxxx }
+ *  $prefix}-$sprite-name { bbbbbbbb }
  */
 @mixin icon-sprites($map, $sprite-names, $base-class: false, $dimensions: false, $prefix: 'icon', $offset-x: 0, $offset-y: 0, $use-percentages: false) {
   @include sprites($map, $sprite-names, $base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages);
 }
 
-// sprites with #{$prefix}-<sprite> class
+// sprites with $prefix-<sprite> class
 // the same with @include all-xxx-sprites
 @mixin render_sprites_css($map, $base-class, $dimensions: false, $prefix: 'icon', $offset-x: 0, $offset-y: 0, $use-percentages: true, $icon-repeat: no-repeat) {
 
@@ -62,10 +62,10 @@
 
 }
 
-// in new compass(v1.0.3), when you @include #{$prefix}-xxxxx-sprite
-// you will also include the #{$prefix}-xxxx classname
+// in new compass(v1.0.3), when you @include $prefix-xxxxx-sprite
+// you will also include the $prefix-xxxx classname
 // so use this new method to include the inner css to your css class
-@mixin include_single_sprites($map, $sprite, $dimensions: false, $offset-x: 0, $offset-y: 0, $use-percentages: true, $icon-repeat: no-repeat) {
+@mixin include_single_sprite($map, $sprite, $dimensions: false, $offset-x: 0, $offset-y: 0, $use-percentages: true, $icon-repeat: no-repeat) {
   background-image: $map;
   background-repeat: $icon-repeat;
   @include icon-sprite($map, $sprite, $dimensions, $offset-x, $offset-y, $use-percentages);
