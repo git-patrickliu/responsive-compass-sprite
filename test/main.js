@@ -2,10 +2,7 @@
 
 var assert = require('assert');
 var fs = require('fs');
-var gutil = require('gulp-util');
-var PassThrough = require('stream').PassThrough;
 var path = require('path');
-var gulpCompass = require('gulp-compass');
 
 describe('responsive-compass-sprite', function() {
     describe('icon-sprite', function() {
