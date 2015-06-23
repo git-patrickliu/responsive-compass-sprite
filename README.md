@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/git-patrickliu/responsive-compass-sprite.svg?branch=master)](https://travis-ci.org/git-patrickliu/responsive-compass-sprite/)
+# responsive-compass-sprite [![Build Status](https://travis-ci.org/git-patrickliu/responsive-compass-sprite.svg?branch=master)](https://travis-ci.org/git-patrickliu/responsive-compass-sprite/)
 
-# responsive-compass-sprite
 Some utils for responsive compass sprite.
 
 ## Introduction
