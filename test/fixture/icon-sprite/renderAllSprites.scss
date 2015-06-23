@@ -1,0 +1,7 @@
+@import "compass/utilities/sprites";
+// import utils
+@import "../../../utils";
+$icons: sprite-map("images/*.png", $spacing: 50px);
+
+@include render-sprites-css($icons, 'sprite');
+

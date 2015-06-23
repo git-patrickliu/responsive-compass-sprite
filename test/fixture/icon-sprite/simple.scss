@@ -1,0 +1,15 @@
+@import "compass/utilities/sprites";
+// import utils
+@import "../../../utils";
+$icons: sprite-map("images/*.png", $spacing: 50px);
+
+// windows10 with 10em width
+// and dynamicly calculate the background-size
+// and include the single sprite
+.windows10 {
+
+  $windows10-width: 10rem;
+  @include include_single_sprite($icons, windows10);
+  @include cal_background_size($windows10-width, $icons, windows10);
+
+}
