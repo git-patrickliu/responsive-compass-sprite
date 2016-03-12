@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "icon";
+
+.dib {
+  display: inline-block;
+}
+
+.chrome10 {
+  width: 10rem;
+  height: 10rem;
+  @include include_single_sprite($icons, chrome);
+  @include cal_background_size(10rem, $icons, chrome);
+}
+
+.chrome20 {
+  width: 20rem;
+  height: 20rem;
+  @include include_single_sprite($icons, chrome);
+  @include cal_background_size(20rem, $icons, chrome);
+}
+
+.chrome30 {
+  width: 30rem;
+  height: 30rem;
+  @include include_single_sprite($icons, chrome);
+  @include cal_background_size(30rem, $icons, chrome);
+}
+
+.firefox10 {
+  width: 10rem;
+  height: 10rem;
+  @include include_single_sprite($icons, firefox);
+  @include cal_background_size(10rem, $icons, firefox);
+}
+
+.firefox20 {
+  width: 20rem;
+  height: 20rem;
+  @include include_single_sprite($icons, firefox);
+  @include cal_background_size(20rem, $icons, firefox);
+}
+
+.firefox30 {
+  width: 30rem;
+  height: 30rem;
+  @include include_single_sprite($icons, firefox);
+  @include cal_background_size(30rem, $icons, firefox);
+}
+
+.ie10 {
+  width: 10rem;
+  height: 10rem;
+  @include include_single_sprite($icons, ie);
+  @include cal_background_size(10rem, $icons, ie);
+}
+
+.ie20 {
+  width: 20rem;
+  height: 20rem;
+  @include include_single_sprite($icons, ie);
+  @include cal_background_size(20rem, $icons, ie);
+}
+
+.ie30 {
+  width: 30rem;
+  height: 30rem;
+  @include include_single_sprite($icons, ie);
+  @include cal_background_size(30rem, $icons, ie);
+}

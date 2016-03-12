@@ -1,0 +1,136 @@
+/**
+ * $em: the width of html label you want to place the background
+ * $map: the reference to the sprite
+ * $name: the name of the png picture in the sprite you want to show
+ */
+/*
+ * $map: reference to the sprite
+ * $name: the name of the png picture in the sprite you want to show
+ * $dimensions: should we set the original width and height to the generated css
+ * $offset-x: custom the offset-x in background-position
+ * $offset-y: custom the offset-y in background-position
+ * $use-percentages: should we use percentage in background-position
+ *
+ * return background-position: 0 10% (10px)
+ */
+/*
+ * $map: reference to the sprite
+ * $sprite-names: the array of the names of the png pictures
+ * $base-class: the base class to extend from
+ * $dimensions
+ * $prefix: the prefix of the generated css class
+ * return
+ *  $prefix}-$sprite-name { xxxxxxxx }
+ *  $prefix}-$sprite-name { bbbbbbbb }
+ */
+.dib {
+  display: inline-block;
+}
+
+.chrome10 {
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -moz-background-size: 10rem auto;
+  -o-background-size: 10rem auto;
+  -webkit-background-size: 10rem auto;
+  background-size: 10rem auto;
+}
+
+.chrome20 {
+  width: 20rem;
+  height: 20rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -moz-background-size: 20rem auto;
+  -o-background-size: 20rem auto;
+  -webkit-background-size: 20rem auto;
+  background-size: 20rem auto;
+}
+
+.chrome30 {
+  width: 30rem;
+  height: 30rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -moz-background-size: 30rem auto;
+  -o-background-size: 30rem auto;
+  -webkit-background-size: 30rem auto;
+  background-size: 30rem auto;
+}
+
+.firefox10 {
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 33.33333%;
+  -moz-background-size: 10rem auto;
+  -o-background-size: 10rem auto;
+  -webkit-background-size: 10rem auto;
+  background-size: 10rem auto;
+}
+
+.firefox20 {
+  width: 20rem;
+  height: 20rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 33.33333%;
+  -moz-background-size: 20rem auto;
+  -o-background-size: 20rem auto;
+  -webkit-background-size: 20rem auto;
+  background-size: 20rem auto;
+}
+
+.firefox30 {
+  width: 30rem;
+  height: 30rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 33.33333%;
+  -moz-background-size: 30rem auto;
+  -o-background-size: 30rem auto;
+  -webkit-background-size: 30rem auto;
+  background-size: 30rem auto;
+}
+
+.ie10 {
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 66.66667%;
+  -moz-background-size: 10.00977rem auto;
+  -o-background-size: 10.00977rem auto;
+  -webkit-background-size: 10.00977rem auto;
+  background-size: 10.00977rem auto;
+}
+
+.ie20 {
+  width: 20rem;
+  height: 20rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 66.66667%;
+  -moz-background-size: 20.01953rem auto;
+  -o-background-size: 20.01953rem auto;
+  -webkit-background-size: 20.01953rem auto;
+  background-size: 20.01953rem auto;
+}
+
+.ie30 {
+  width: 30rem;
+  height: 30rem;
+  background-image: url('/themes/images/icon-s1602dcdad8.png');
+  background-repeat: no-repeat;
+  background-position: 0 66.66667%;
+  -moz-background-size: 30.0293rem auto;
+  -o-background-size: 30.0293rem auto;
+  -webkit-background-size: 30.0293rem auto;
+  background-size: 30.0293rem auto;
+}
