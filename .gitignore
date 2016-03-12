@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+node_modules
+.DS_Store
 
 # Runtime data
 pids
@@ -24,7 +26,7 @@ build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules
 
 
 .DS_store
